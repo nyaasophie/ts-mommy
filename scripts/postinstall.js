@@ -1,3 +1,4 @@
+//based on tsc-hooks: https://github.com/swimauger/tsc-hooks
 const path = require('path');
 const fs = require('fs');
 

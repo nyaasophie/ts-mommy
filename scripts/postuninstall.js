@@ -1,3 +1,4 @@
+//based on tsc-hooks: https://github.com/swimauger/tsc-hooks
 const fs = require('fs');
 
 module.exports = (TSC_BIN_PATH) => {

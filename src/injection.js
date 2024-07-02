@@ -4,6 +4,8 @@ const path = require('path');
 const ts = require('typescript');
 const mommy = require('./mommy')
 
+//based on tsc-hooks: https://github.com/swimauger/tsc-hooks
+
 const tsconfigPath = path.resolve(process.cwd(), 'tsconfig.json');
 
 if (fs.existsSync(tsconfigPath)) {
