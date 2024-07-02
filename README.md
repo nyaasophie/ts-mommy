@@ -1,6 +1,6 @@
-# `ts-mommy`
+# ts-mommy
 
-Mommy's here to support you when building typescript~ ❤️
+mommy's here to support you when building typescript~ ❤️
 
 # Installation
 
@@ -8,7 +8,17 @@ Simply run `yarn add --dev ts-mommy` like a good girl~
 
 # Usage
 
-Whenever you run `tsc` mommy will be here to see how you did~
+Whenever you run `tsc` mommy will be here to see how you did... but only if mommy is turned on!
+
+add the following to your `tsconfig.json` to turn mommy on~
+
+```
+  "mommy": {
+    "enabled": true
+  }
+```
+
+**Examples**
 
 A successful operation:
 
@@ -40,7 +50,7 @@ info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this comm
 
 # Configuration
 
-Mommy will read from the `mommy.options` key in your `tsconfig.json` to make her messages better for you~ ❤️
+Mommy will read from the `mommy` key in your `tsconfig.json` to make her messages better for you~ ❤️
 
 - `enabled` - mommy is turned on when this is `true`
 - `affectionate_term` - what to call you~ (default: `["girl"]`)
@@ -49,13 +59,31 @@ Mommy will read from the `mommy.options` key in your `tsconfig.json` to make her
 - `emotes` - what emotes mommy will have~ (default `["❤️","💖","💗","💓","💞"]`)
 - `moods` - picks the set of possible responses~ (default:`["chill"]`)
 
+you only need to specify what you want mommy to change for you, for example:
+```
+  "mommy": {
+    "enabled": true,
+    "moods": ["ominous"]
+  }
+```
+
 Mommy can also be _spicy_ but you'll need to figure that out all by yourself~
 
 All options, except `enabled` are string arrays. Mommy will randomly select one of them whenever she talks to you~
 
 For example, the phrase "mommy loves her little girl~ 💞" is "{role} loves {pronouns} little {affectionate_term}~"
 
-So if you set `role: ["daddy"]`, `pronouns: ["his","their"]`, and `affectionate_term: ["boy","pet","baby"]` then you might get any of
+So if you set:
+
+```
+  "mommy": {
+    "enabled": true,
+    "role": ["daddy"],
+    "pronouns": ["his","their"],
+    "affectionate_term": ["boy","pet","baby"]
+  }
+```
+ ...then you might get any of
 
 - daddy loves their little boy~ ❤️
 - daddy loves his little pet~
