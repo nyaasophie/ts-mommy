@@ -10,6 +10,32 @@ Simply run `yarn add --dev ts-mommy` like a good girl~
 
 Whenever you run `tsc` mommy will be here to see how you did~
 
+A successful operation:
+```
+$ yarn tsc
+yarn run v1.22.22
+$ /Users/sophie/Development/test-ts/node_modules/.bin/tsc
+*boops your nose*
+✨  Done in 0.58s.
+```
+
+An unsuccessful operation:
+```
+$ yarn tsc
+yarn run v1.22.22
+$ /Users/sophie/Development/test-ts/node_modules/.bin/tsc
+index.ts:4:3 - error TS2322: Type 'undefined' is not assignable to type 'string'.
+
+4   return //`Hello ${who}! `;
+    ~~~~~~
+
+Found 1 error in index.ts:4
+
+everything's gonna be ok~
+error Command failed with exit code 2.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+```
+
 # Configuration
 
 Mommy will read from the `mommy.options` key in your `tsconfig.json` to make her messages better for you~ ❤️
