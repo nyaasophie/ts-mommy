@@ -12,7 +12,7 @@
     "typescript": "^4.3.2 || ^5.0.2 "
   },
   "name": "ts-mommy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Mommy's here to support you when compiling typescript~ ❤️",
   "main": "index.ts",
   "repository": "git@github.com:nyaasophie/ts-mommy.git",
