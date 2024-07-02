@@ -6,6 +6,8 @@ mommy's here to support you when building typescript~ ❤️
 
 Simply run `yarn add --dev ts-mommy` like a good girl~
 
+mommy can also be installed globally (`yarn global add ts-mommy --dev`), if you **always** want her to be there for you~
+
 # Usage
 
 Whenever you run `tsc` mommy will be here to see how you did... but only if mommy is turned on!
