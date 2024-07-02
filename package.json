@@ -15,7 +15,7 @@
   "version": "0.0.1",
   "description": "Mommy's here to support you when compiling typescript~ ❤️",
   "main": "index.ts",
-  "repository": "git@github.com:sophienyaa/ts-mommy.git",
+  "repository": "git@github.com:nyaasophie/ts-mommy.git",
   "author": "Sophie <sophie@sophieis.gay>",
   "license": "MIT",
   "scripts": {
