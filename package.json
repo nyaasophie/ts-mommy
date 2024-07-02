@@ -1,0 +1,24 @@
+{
+  "devDependencies": {
+    "ts-mommy": "/Users/sophie/Development/ts-mommy",
+    "typescript": "^5.5.3"
+  },
+  "peerDependencies": {
+    "typescript": "^4.3.2 || ^5.0.2 "
+  },
+  "name": "ts-mommy",
+  "version": "0.0.1",
+  "description": "Mommy's here to support you when compiling typescript~ ❤️",
+  "main": "index.ts",
+  "repository": "git@github.com:sophienyaa/ts-mommy.git",
+  "author": "Sophie <sophie@sophieis.gay>",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "node run postinstall",
+    "postuninstall": "node run postuninstall"
+  },
+  "dependencies": {
+    "json5": "^2.2.3",
+    "string-template": "^1.0.0"
+  }
+}

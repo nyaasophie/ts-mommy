@@ -58,19 +58,6 @@
                 "THOU HAST DRUNK TOO DEEPLY OF THE FONT"
             ]
         },
-
-
-
-
-
-
-
-
-
-
-
-
-
         "thirsty": {
             "spiciness": "thirsty",
             "positive": [
@@ -99,7 +86,6 @@
                 "you've been a bad little {affectionate_term} and worn out {role}~"
             ]
         },
-
         "yikes": {
             "spiciness": "yikes",
             "positive": [
@@ -137,7 +123,6 @@
             ]
         }
     },
-
     "vars": {
         "mood": {
             "defaults": ["chill"]
@@ -149,14 +134,12 @@
             "defaults": ["her"]
         },
         "role": {
-            "defaults": []
+            "defaults": ["mommy"]
         },
-
         "affectionate_term": {
             "defaults": ["girl"],
             "env_key": "LITTLE"
         },
-
         "denigrating_term": {
             "spiciness": "yikes",
             "defaults": ["slut", "toy", "pet", "pervert", "whore"],
