@@ -40,6 +40,7 @@ info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this comm
 
 Mommy will read from the `mommy.options` key in your `tsconfig.json` to make her messages better for you~ ❤️
 
+* `enabled` - mommy is turned on when this is `true`
 * `mommys_little` - what to call you~ (default: "girl")
 * `mommys_pronouns` - what pronouns mommy will use for themself~ (default: "her")
 * `mommys_role` - what role mommy will have~ (default "mommy")

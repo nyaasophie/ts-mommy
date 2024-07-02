@@ -27,28 +27,15 @@ module.exports = {
             part: this.getRandomValue(options.vars.part.defaults),
         })
     },
-    setDefaults: function (responses) {
+    setDefaults: function (defaults, responses) {
+        if(defaults.affectionate_term) { responses.vars.affectionate_term.defaults = defaults.affectionate_term }
+        if(defaults.pronouns) { responses.vars.pronoun.defaults = defaults.pronouns }
+        if(defaults.role) { responses.vars.role.defaults = defaults.role }
+        if(defaults.emotes) { responses.vars.emote.defaults = defaults.emotes }
+        if(defaults.moods) { responses.vars.mood.defaults = defaults.moods }
+        if(defaults.denigrating_term) { responses.vars.denigrating_term.defaults = defaults.denigrating_term }
+        if(defaults.part) { responses.vars.part.defaults = defaults.part }
 
-        const options = responses.vars
-
-        //TODO: handle env vars for config
-        const TS_MOMMYS_LITTLE = 'undefined' //girl/boy
-        const TS_MOMMYS_PRONOUNS = undefined //her
-        const TS_MOMMYS_ROLES = undefined //mommy
-        const TS_MOMMYS_EMOTES = undefined //💜
-        const TS_MOMMYS_MOODS = 'undefined' //chill
-
-
-        TS_MOMMYS_LITTLE ? options.affectionate_term.defaults = [TS_MOMMYS_LITTLE] : options.affectionate_term.defaults;
-        TS_MOMMYS_PRONOUNS ? options.pronoun.defaults = [TS_MOMMYS_PRONOUNS] : options.pronoun.defaults;
-        TS_MOMMYS_ROLES ? options.role.defaults = [TS_MOMMYS_ROLES] : options.role.defaults;
-        TS_MOMMYS_EMOTES ? options.emote.defaults = [TS_MOMMYS_EMOTES] : options.emote.defaults;
-        TS_MOMMYS_MOODS ? options.mood.defaults = [TS_MOMMYS_MOODS] : options.mood.defaults;
-        //TODO impl spicy
-
-
-        responses.vars = options;
         return responses;
-
     }
 }
