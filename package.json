@@ -1,6 +1,11 @@
 {
   "devDependencies": {
-    "ts-mommy": "/Users/sophie/Development/ts-mommy",
+    "@eslint/js": "^9.6.0",
+    "eslint": "^9.6.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
+    "neostandard": "^0.11.0",
+    "prettier": "^3.3.2",
     "typescript": "^5.5.3"
   },
   "peerDependencies": {
@@ -15,10 +20,17 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "node run postinstall",
-    "postuninstall": "node run postuninstall"
+    "postuninstall": "node run postuninstall",
+    "lint": "eslint . --fix --max-warnings=0",
+    "format": "prettier . --write",
+    "prepare": "husky install"
   },
   "dependencies": {
     "json5": "^2.2.3",
     "string-template": "^1.0.0"
+  },
+  "lint-staged": {
+    "*.js": "yarn lint",
+    "*.{js,css,md,html,json}": "yarn format"
   }
 }
