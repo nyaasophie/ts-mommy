@@ -41,17 +41,19 @@ info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this comm
 Mommy will read from the `mommy.options` key in your `tsconfig.json` to make her messages better for you~ ❤️
 
 * `enabled` - mommy is turned on when this is `true`
-* `mommys_little` - what to call you~ (default: "girl")
-* `mommys_pronouns` - what pronouns mommy will use for themself~ (default: "her")
-* `mommys_role` - what role mommy will have~ (default "mommy")
-* `mommys_emotes` - what emotes mommy will have~ (default "❤️/💖/💗/💓/💞")
-* `mommys_moods` - picks the set of possible responses~ (default: "chill", possible values "chill", "ominous")
+* `affectionate_term` - what to call you~ (default: "girl")
+* `pronouns` - what pronouns mommy will use for themself~ (default: "her")
+* `role` - what role mommy will have~ (default "mommy")
+* `emotes` - what emotes mommy will have~ (default "❤️/💖/💗/💓/💞")
+* `moods` - picks the set of possible responses~ (default: "chill", possible values "chill", "ominous")
+
+Mommy can also be _spicy_ but you'll need to figure that out all by yourself~
 
 All of these options are string arrays. Mommy will randomly select one of them whenever she talks to you~
 
 For example, the phrase "mommy loves her little girl~ 💞" is "{mommys_role} loves {mommys_pronouns} little {mommys_little}~"
 
-So if you set `mommys_role: ["daddy"]`, `mommys_pronouns: ["his","their"]`, and `mommys_little:["boy","pet","baby"]` then you might get any of
+So if you set `role: ["daddy"]`, `pronouns: ["his","their"]`, and `affectionate_term: ["boy","pet","baby"]` then you might get any of
 
 * daddy loves their little boy~ ❤️
 * daddy loves his little pet~
